@@ -20,6 +20,7 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
 	http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
 
+	<!--reference：是consumer独有的，必须依赖于服务提供者的api，而这个拍、又被provider实现了-->
 	<dubbo:reference id="demoService" interface="com.alibaba.dubbo.demo.DemoService" />
 
 </beans>
